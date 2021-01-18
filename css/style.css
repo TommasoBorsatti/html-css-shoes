@@ -1,21 +1,22 @@
 
-*{
+* {
   margin:0px ;
   padding:0px;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Rubik Mono One', sans-serif;
 }
 
-nav{
+nav {
   position: fixed;
   right: 0;
   padding: 10px;
+  z-index: 5;
 }
 
-nav li{
+nav li {
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -25,6 +26,7 @@ nav li{
   border-radius: 100%;
   background-color: #fff;
   margin: 5px;
+
 }
 
 li a {
@@ -34,10 +36,27 @@ li a {
 }
 
 
-
 section.box {
   height: 100vh;
+  text-align: center;
+  font-size: 25px;
+  color: yellow;
+  position: relative;
+  letter-spacing: 6px;
 }
+
+div.box {
+  width: 45%;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+div.box > img {
+  width: 100%;
+}
+
 
 .red{
   background-color: red;
